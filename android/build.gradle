@@ -4,6 +4,9 @@ buildscript {
         mavenCentral()
         maven { url 'https://storage.googleapis.com/download.flutter.io' }
     }
+    dependencies {
+        classpath 'org.jetbrains.kotlin:kotlin-gradle-plugin:1.9.10'
+    }
 }
 
 plugins {
