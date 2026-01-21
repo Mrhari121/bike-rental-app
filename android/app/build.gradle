@@ -32,7 +32,8 @@ android {
     }
 
     kotlinOptions {
-        jvmTarget = JavaVersion.VERSION_11.toString()
+        jvmTarget = '11'
+        freeCompilerArgs += ["-Xopt-in=kotlin.RequiresOptIn"]
     }
 
     sourceSets {
@@ -59,5 +60,6 @@ flutter {
 }
 
 dependencies {
+    // Kotlin stdlib
     implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.23"
 }
