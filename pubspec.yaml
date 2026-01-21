@@ -12,21 +12,21 @@ dependencies:
     sdk: flutter
 
   # SQLite Database
-  sqflite: ^2.3.0
-  path: ^1.8.3
+  sqflite: ^2.3.3
+  path: ^1.9.0
 
   # QR Code Generation
   qr_flutter: ^4.1.0
 
   # QR Code Scanning
-  mobile_scanner: ^3.5.0
+  mobile_scanner: ^3.5.7
 
   # File Operations
-  path_provider: ^2.1.1
+  path_provider: ^2.1.4
   gallery_saver: ^2.3.2
 
-  # Image Picker for license upload
-  image_picker: ^1.0.4
+  # Image Picker for license upload - compatible with Dart 3.3.0
+  image_picker: ^1.1.2
 
   # UI & State Management
   cupertino_icons: ^1.0.6
