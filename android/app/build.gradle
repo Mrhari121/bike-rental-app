@@ -42,6 +42,11 @@ android {
 
     kotlinOptions {
         jvmTarget = '11'
+        freeCompilerArgs = [
+            '-Xno-param-assertions',
+            '-Xno-receiver-assertions',
+            '-Xno-call-assertions'
+        ]
     }
 
     sourceSets {
