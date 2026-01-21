@@ -39,6 +39,12 @@ android {
         main.java.srcDirs += 'src/main/kotlin'
     }
 
+    buildFeatures {
+        renderScript false
+        aidl false
+        prefab false
+    }
+
     defaultConfig {
         applicationId "com.example.bike_rental_app"
         minSdkVersion 21
@@ -50,6 +56,9 @@ android {
     buildTypes {
         release {
             signingConfig signingConfigs.debug
+            minifyEnabled false
+            shrinkResources false
+            debuggable false
         }
     }
 }
