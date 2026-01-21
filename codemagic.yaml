@@ -34,10 +34,11 @@ workflows:
 
       - name: Build APK
         script: |
-          flutter build apk --release
+          flutter build apk --release -v -- --stacktrace --debug 2>&1 | tee build.log
 
     artifacts:
       - build/app/outputs/apk/release/app-release.apk
+      - build.log
 
     publishing:
       email:
