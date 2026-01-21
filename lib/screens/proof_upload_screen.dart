@@ -19,6 +19,7 @@ class ProofUploadScreen extends StatefulWidget {
 class _ProofUploadScreenState extends State<ProofUploadScreen> {
   File? _licenseImage;
   final _imagePicker = ImagePicker();
+  bool isProcessing = false;
 
   Future<void> _pickImage(ImageSource source) async {
     try {

@@ -33,7 +33,6 @@ android {
 
     kotlinOptions {
         jvmTarget = '11'
-        freeCompilerArgs += ["-Xopt-in=kotlin.RequiresOptIn"]
     }
 
     sourceSets {
@@ -60,7 +59,4 @@ flutter {
 }
 
 dependencies {
-    // Kotlin standard library - complete set
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8:1.9.23"
-    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.9.23"
 }
